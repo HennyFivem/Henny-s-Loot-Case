@@ -36,8 +36,8 @@ Configuration is split between the `config.lua` file and your `ox_inventory` ite
 First, you must add the case as a usable item in your `ox_inventory`. Go to your inventory's item list (e.g., `ox_inventory/data/items.lua`) and add the following:
 
 ```lua
-['supply_case'] = {
-    label = 'Supply Case',
+['loot_case'] = {
+    label = 'Loot Case',
     weight = 2000,
     client = {
         event = 'henny_lootcase:client:useBox',
@@ -45,7 +45,7 @@ First, you must add the case as a usable item in your `ox_inventory`. Go to your
 },
 ```
 
-*You can change `supply_case` to anything, but make sure it matches the `Config.LootboxItemName` in `config.lua`.*
+*You can change `loot_case` to anything, but make sure it matches the `Config.LootboxItemName` in `config.lua`.*
 
 ### 2\. The Main Config (`config.lua`)
 
